@@ -6,6 +6,10 @@ const app = express();
 app.use(express.json());
 app.use(cors({ origin: true }));
 
+app.get("/A", (req, res) => {
+  res.send("Hello World!")
+})
+
 app.post("/", async (req, res) => {
   const { username } = req.body;
 
