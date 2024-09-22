@@ -26,7 +26,7 @@ app.post("/", async (req, res) => {
 
   } catch (e) {
     
-    return res.status(e.responce.status).json(e.responce.data)
+    return res.status(e.response.status).json(e.response.data)
 
   }
 
@@ -51,7 +51,7 @@ app.get("/", async (req, res) => {
 
   } catch (e) {
     
-    return res.status(e.responce.status).json(e.responce.data)
+    return res.status(e.response.status).json(e.response.data)
 
   }
 
